@@ -8,7 +8,7 @@ var app = angular.module('ashleycorneliusPortfolioApp', [
     'ui.router'
 ]);
 
-var appEnvironment = 'development'; //can equal 'production' or 'development'
+var appEnvironment = 'production'; //can equal 'production' or 'development'
 
 if (appEnvironment == 'production') {
     app.constant('DATA_ENDPOINT', 'https://acorncdn.nyc3.digitaloceanspaces.com/portfolio/data/portfolio.json');
