@@ -2,6 +2,8 @@
  * App-wide Styles
  */
 
+ @import url('https://fonts.googleapis.com/css?family=Raleway:100,700');
+
  .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
@@ -16,7 +18,7 @@
   
   body {
       height: 100vh;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Raleway', sans-serif;
       color: white;
       background-color: #272727;
       background: url('/assets/images/bg.jpg') no-repeat top center fixed;
@@ -47,7 +49,7 @@
   }
   
   p {
-      font-weight: 300;
+      font-weight: 100;
       margin: 12px 0;
       font-size: 14px;
       line-height: 1.5;
@@ -65,7 +67,7 @@
   }
   
   a:hover, a:focus, a:active {
-      color: #ff5858;
+      color: #f9acac;
   }
   
   *, *:before, *:after {
@@ -175,7 +177,7 @@
   
   .sidebar h2 {
       font-size: 15px;
-      font-weight: 300;
+      font-weight: 100;
       color: #ccc;
   }
   
@@ -192,7 +194,7 @@
   
   .social-icon .fa {
       font-size: 1.4em;
-      color: #ff5858;
+      color: #f9acac;
   }
   
   .menu-icon {
@@ -300,7 +302,7 @@
       padding: 8px 20px;
       border-radius: 30px;
       font-size: 13px;
-      font-weight: 300;
+      font-weight: 100;
       display: inline-block;
       width: 9em;
       margin: 5px 10px;
@@ -308,8 +310,8 @@
   }
   
   .btn:hover {
-      border-color: #ff5858;
-      color: #ff5858;
+      border-color: #f9acac;
+      color: #f9acac;
   }
   
   .btn .fa {
@@ -387,7 +389,7 @@
       font-size: 16px;
       letter-spacing: 1px;
       margin-top: 5px;
-      color: #ff5858;
+      color: #293042;
   }
   
   .works {

@@ -8,7 +8,8 @@ var app = angular.module('ashleycorneliusPortfolioApp', [
     'ui.router'
 ]);
 
-app.constant('DATA_ENDPOINT', '/assets/data/portfolio.json');
+//app.constant('DATA_ENDPOINT', '/assets/data/portfolio.json');
+app.constant('DATA_ENDPOINT', 'https://acorncdn.nyc3.digitaloceanspaces.com/assets/data/portfolio.json');
 
 app.config(function ($urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider.otherwise('/');
