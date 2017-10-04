@@ -111,7 +111,7 @@
         margin-top: 48px;
     }
 
-    .sidebar.open .nav ul {
+    .sidebar .nav ul {
         flex-direction: row;
     }
 
