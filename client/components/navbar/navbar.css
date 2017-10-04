@@ -1,12 +1,53 @@
+
+.sidebar {
+    background-color: rgba(8,16,36,.7);
+    width: 15em;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-transition: .25s all linear;
+    -moz-transition: .25s all linear;
+    -o-transition: .25s all linear;
+    transition: .25s all linear;
+}
+
+.sidebar .wrapper {
+    padding: 10%;
+}
+
+.sidebar h1,
+.sidebar h2 {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(255,255,255,.15);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    line-height: 1;
+}
+
+.sidebar h2 {
+    font-size: 15px;
+    font-weight: 100;
+    color: #ccc;
+}
+
 .nav ul {
     list-style: none;
     padding-left: 0;
     margin: 0;
-}
-
-.nav ul > li {
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
 .nav ul > li > a {
@@ -21,4 +62,146 @@
 
 .nav ul > li > a:hover {
     padding-left: 30px;
+}
+
+.social {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 10px 9px 10px;
+}
+
+.social-icon .fa {
+    font-size: 1.4em;
+    color: #f9acac;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.email {
+    font-size: 14px;
+    letter-spacing: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .sidebar {
+        width: 100vw;
+        position: static;
+    }
+
+    .sidebar.close {
+        height: 60px;
+    }
+
+    .sidebar.open {
+        height: 158px;
+    }
+
+    .sidebar .wrapper {
+        padding: 0;
+    }
+
+    .sidebar.open .nav {
+        margin-top: 48px;
+    }
+
+    .sidebar.open .nav ul {
+        flex-direction: row;
+    }
+
+    .sidebar .nav ul > li {
+        display: flex;
+        flex: 1;
+    }
+
+    .sidebar .nav ul > li > a {
+        margin-bottom: 0;
+    }
+
+    .sidebar .portrait {
+        width: auto;
+        height: 60px;
+        float: left;
+    }
+
+    .sidebar .nav-info h1 {
+        font-size: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-bottom: 0 none;
+        margin-bottom: 3px;
+        padding-bottom: 0px;
+    }
+
+    .sidebar .nav-info h2 {
+        font-size: 11px;
+    }
+
+    .nav-info {
+        padding: 15px 20px;
+    }
+    
+    .nav-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sidebar.close .email,
+    .sidebar.close .social {
+        opacity: 0;
+        -webkit-transition: .25s linear opacity;
+        -moz-transition: .25s linear opacity;
+        -o-transition: .25s linear opacity;
+        transition: .25s linear opacity;
+    }
+
+    .sidebar.open .email,
+    .sidebar.open .social {
+        opacity: 1;
+    }
+
+    .sidebar .email {
+        position: absolute;
+        left: 10px;
+        top: 63px;
+    }
+
+    .sidebar .social {
+        position: absolute;
+        right: 10px;
+        top: 50px;
+    }
+
+    .social-icon {
+        display: inline-block;
+        padding: 10px 15px 10px 0;
+    }
+
+    .social-icon .fa {
+        font-size: 1.4em;
+    }
+
+    .menu-icon {
+        display: block;
+        float: right;
+        font-size: 2em;
+        opacity: .3;
+        padding: 15px;
+        -webkit-transition: .25s all linear;
+        -moz-transition: .25s all linear;
+        -o-transition: .25s all linear;
+        transition: .25s all linear;
+    }
+
+    .menu-icon:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
 }

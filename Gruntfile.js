@@ -17,8 +17,7 @@ module.exports = function (grunt) {
     cdnify: 'grunt-google-cdn',
     protractor: 'grunt-protractor-runner',
     buildcontrol: 'grunt-build-control',
-    istanbul_check_coverage: 'grunt-mocha-istanbul',
-    ngconstant: 'grunt-ng-constant'
+    istanbul_check_coverage: 'grunt-mocha-istanbul'
   });
 
   // Time how long tasks take. Can help when optimizing build times
@@ -60,10 +59,6 @@ module.exports = function (grunt) {
       babel: {
         files: ['<%= yeoman.client %>/{app,components}/**/!(*.spec|*.mock).js'],
         tasks: ['newer:babel:client']
-      },
-      ngconstant: {
-        files: ['<%= yeoman.server %>/config/environment/shared.js'],
-        tasks: ['ngconstant']
       },
       injectJS: {
         files: [
@@ -238,9 +233,7 @@ module.exports = function (grunt) {
       dist: {
         src: [
           '<%= yeoman.dist %>/<%= yeoman.client %>/!(bower_components){,*/}*.{js,css}',
-          '<%= yeoman.dist %>/<%= yeoman.client %>/assets/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
           '<%= yeoman.dist %>/<%= yeoman.client %>/assets/css/*',
-          '<%= yeoman.dist %>/<%= yeoman.client %>/assets/fonts/*'
         ]
       }
     },
@@ -262,9 +255,7 @@ module.exports = function (grunt) {
       js: ['<%= yeoman.dist %>/<%= yeoman.client %>/!(bower_components){,*/}*.js'],
       options: {
         assetsDirs: [
-          '<%= yeoman.dist %>/<%= yeoman.client %>',
-          '<%= yeoman.dist %>/<%= yeoman.client %>/assets/images',
-          '<%= yeoman.dist %>/<%= yeoman.client %>/assets/js'
+          '<%= yeoman.dist %>/<%= yeoman.client %>'
         ],
         // This is so we update image references in our ng-templates
         patterns: {
@@ -297,25 +288,6 @@ module.exports = function (grunt) {
           src: '**/*.js',
           dest: '.tmp/concat'
         }]
-      }
-    },
-
-    // Dynamically generate angular constant `appConfig` from
-    // `server/config/environment/shared.js`
-    ngconstant: {
-      options: {
-        name: 'ashleycorneliusPortfolioApp.constants',
-        dest: '<%= yeoman.client %>/app/app.constant.js',
-        deps: [],
-        wrap: true,
-        configPath: '<%= yeoman.server %>/config/environment/shared'
-      },
-      app: {
-        constants: function() {
-          return {
-            appConfig: require('./' + grunt.config.get('ngconstant.options.configPath'))
-          };
-        }
       }
     },
 
@@ -366,13 +338,19 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             'bower_components/**/*',
-            'assets/images/{,*/}*.{webp}',
-            'assets/css/**/*',
-            'assets/fonts/**/*',
+            //'assets/images/{,*/}*.{webp}',
+            'assets/images/**/*',
             'assets/css/**/*',
             'index.html'
           ]
-        }, {
+        }, 
+        {
+            expand: true,
+            cwd: '<%= yeoman.client %>',
+            dest: '<%= yeoman.dist %>/<%= yeoman.client %>',
+            src: 'assets/data/*'
+        },
+        {
           expand: true,
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/<%= yeoman.client %>/assets/images',
@@ -418,9 +396,7 @@ module.exports = function (grunt) {
 
     // Run some tasks in parallel to speed up the build process
     concurrent: {
-      pre: [
-        'ngconstant'
-      ],
+      pre: [],
       server: [
         'newer:babel:client',
       ],
