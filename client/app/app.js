@@ -8,8 +8,15 @@ var app = angular.module('ashleycorneliusPortfolioApp', [
     'ui.router'
 ]);
 
-//app.constant('DATA_ENDPOINT', '/assets/data/portfolio.json');
-app.constant('DATA_ENDPOINT', 'https://acorncdn.nyc3.digitaloceanspaces.com/assets/data/portfolio.json');
+var appEnvironment = 'development';
+
+if (appEnvironment === 'production') {
+    app.constant('DATA_ENDPOINT', 'https://acorncdn.nyc3.digitaloceanspaces.com/assets/data/portfolio.json');
+} else if (appEnvironment === 'development') {
+    app.constant('DATA_ENDPOINT', '/assets/data/portfolio.json');
+} else {
+    alert('could not determine app environment');
+}
 
 app.config(function ($urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider.otherwise('/');
