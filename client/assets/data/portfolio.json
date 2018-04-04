@@ -1,25 +1,54 @@
 [
     {
-        "name": "Acute Financial",
-        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies",
-        "type": "Logo, Web Design, Print Collateral",
-        "url": "http://acutefinancial.com",
-        "thumbnail": "/assets/images/projects/thumbs-assets/acute-thumb.jpg",
+        "name": "Noble Capital",
+        "description": "",
+        "type": "Full Rebrand Creation, Web Design, Digital + Print Collateral, Vehicle Wraps, Email Design",
+        "url": "http://noblecapital.com",
+        "thumbnail": "/assets/images/projects/thumbs-assets/noble-thumb.jpg",
         "images": [
-            {"src": "/assets/images/projects/acute/image1.jpg", "alt": "", "name":"acute"},
-            {"src": "/assets/images/projects/acute/image2.jpg", "alt": "", "name":"acute"},
-            {"src": "/assets/images/projects/acute/image3.jpg", "alt": "", "name":"acute"}
+            {"src": "/assets/images/projects/noble/Noble-Home.jpg", "alt": "Website Homepage", "name":"noble"},
+            {"src": "/assets/images/projects/noble/noble-infographic.jpg", "alt": "Noble Infographic", "name":"noble"},
+            {"src": "/assets/images/projects/noble/noble-radio.jpg", "alt": "Website Radio Page", "name":"noble"},
+            {"src": "/assets/images/projects/noble/noblecar.jpg", "alt": "Noble Vehicle Wrap", "name":"noble"},
+            {"src": "/assets/images/projects/noble/noble-brand.jpg", "alt": "Noble Brand Guide (typopgraphy)", "name":"noble"}
         ]
     },
     {
         "name": "Carpenter & Croft",
-        "description": "I had a wonderful opportunity to create new branding and a website for a lovely law firm here in town, Carpenter and Croft, PLLC. <br>A relatively new law firm, they wanted to do a complete rebranding. They asked for friendly, professional, and approachable. I knew right away I wanted to swing in the direction of clean and modern. <br>The geometric pattern for the final logo, even though this is a new direction for me, I feel turned out amazing and I feel safe saying is one of my favorite logos to date.",
-        "type": "Logo, Web Design",
+        "description": "",
+        "type": "Full Brand Design, Web Design",
         "url": "http://carpenterandcroft.com",
         "thumbnail": "/assets/images/projects/thumbs-assets/carpenterandcroft-thumb.jpg",
         "images": [
             {"src": "/assets/images/projects/carpenterandcroft/image1.jpg", "alt": "Business Card Front", "name":"carpenterandcroft"},
-            {"src": "/assets/images/projects/carpenterandcroft/image2.jpg", "alt": "Website Design", "name":"carpenterandcroft"}
+            {"src": "/assets/images/projects/carpenterandcroft/image2.jpg", "alt": "Website Design", "name":"carpenterandcroft"},
+            {"src": "/assets/images/projects/carpenterandcroft/cc.jpg", "alt": "Website Design", "name":"carpenterandcroft"},
+            {"src": "/assets/images/projects/carpenterandcroft/cc2.jpg", "alt": "Website Design", "name":"carpenterandcroft"}
+        ]
+    },
+    {
+        "name": "Lucas & Lucas Law",
+        "description": "",
+        "type": "Full Brand Design, Letterhead Design, Business Card Design",
+        "url": "",
+        "thumbnail": "/assets/images/projects/thumbs-assets/lucas-thumb.jpg",
+        "images": [
+            {"src": "/assets/images/projects/lucaslaw/lllaw.jpg", "alt": "Business Card Design", "name":"lucas"},
+            {"src": "/assets/images/projects/lucaslaw/llletterhead.jpg", "alt": "Letterhead Design", "name":"lucas"}
+        ]
+    },
+    {
+        "name": "Acute Financial",
+        "description": "",
+        "type": "Logo, Web Design, Digital + Print Collateral, Vehicle Wraps, Email Design",
+        "url": "",
+        "thumbnail": "/assets/images/projects/thumbs-assets/acute-thumb.jpg",
+        "images": [
+            {"src": "/assets/images/projects/acute/acutehomepage.jpg", "alt": "Acute Homepage", "name":"acute"},
+            {"src": "/assets/images/projects/acute/acuteevents.jpg", "alt": "Acute Events Page", "name":"acute"},
+            {"src": "/assets/images/projects/acute/acutecar.jpg", "alt": "Acute Vehicle Wrap", "name":"acute"},
+            {"src": "/assets/images/projects/acute/image1.jpg", "alt": "Email Design", "name":"acute"},
+            {"src": "/assets/images/projects/acute/image2.jpg", "alt": "Email Newsletter", "name":"acute"}
         ]
     }
 ]
