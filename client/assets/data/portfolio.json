@@ -27,6 +27,21 @@
         ]
     },
     {
+        "name": "Streamline Funding",
+        "description": "",
+        "type": "Branding, Digital Marketing, Print Ads",
+        "url": "",
+        "thumbnail": "/assets/images/projects/thumbs-assets/streamline-thumb.jpg",
+        "images": [
+            {"src": "/assets/images/projects/streamline/magazine1.png", "alt": "magazine ad", "name":"streamline"},
+            {"src": "/assets/images/projects/streamline/magazine2.png", "alt": "magazine ad", "name":"streamline"},
+            {"src": "/assets/images/projects/streamline/ad1.jpg", "alt": "facebook campaign ad", "name":"streamline"},
+            {"src": "/assets/images/projects/streamline/ad2.jpg", "alt": "facebook campaign ad", "name":"streamline"},
+            {"src": "/assets/images/projects/streamline/ad3.jpg", "alt": "facebook campaign ad", "name":"streamline"},
+            {"src": "/assets/images/projects/streamline/flip-flop.png", "alt": "facebook campaign ad", "name":"streamline"}
+        ]
+    },
+    {
         "name": "Lucas & Lucas Law",
         "description": "",
         "type": "Full Brand Design, Letterhead Design, Business Card Design",
@@ -49,6 +64,17 @@
             {"src": "/assets/images/projects/acute/acutecar.jpg", "alt": "Acute Vehicle Wrap", "name":"acute"},
             {"src": "/assets/images/projects/acute/image1.jpg", "alt": "Email Design", "name":"acute"},
             {"src": "/assets/images/projects/acute/image2.jpg", "alt": "Email Newsletter", "name":"acute"}
+        ]
+    },
+    {
+        "name": "Axis Care",
+        "description": "",
+        "type": "App Icon Design",
+        "url": "",
+        "thumbnail": "/assets/images/projects/thumbs-assets/axiscare-thumb.jpg",
+        "images": [
+            {"src": "/assets/images/projects/axiscare/logo1.png", "alt": "app icon light version", "name":"axiscare"},
+            {"src": "/assets/images/projects/axiscare/logo-display.jpg", "alt": "app icon exhibit", "name":"axiscare"}
         ]
     }
 ]
